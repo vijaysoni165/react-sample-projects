@@ -7,6 +7,7 @@ import DataTable from "./pages/DataTable";
 import Calculator from "./pages/Calculator";
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
+import CommonCode from './pages/CommonCode';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/datatable" element={<DataTable />} />
-      <Route path="/calculator" element={<Calculator />} />
+      <Route path="/commoncode" element={<CommonCode />} />
     </Routes>
     </>
   )

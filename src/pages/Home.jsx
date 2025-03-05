@@ -61,12 +61,12 @@ function Home() {
                 <h5>Calculator</h5>
               </footer>
             </Link>
-            <Link to="/calculator" className="img-tiles">              
+            <Link to="/commoncode" className="img-tiles">              
               <span className="img-container">
                 <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
               </span>
               <footer>
-                <h5>Calculator</h5>
+                <h5>Common Code</h5>
               </footer>
             </Link>                        
           </nav>          
