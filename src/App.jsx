@@ -8,6 +8,11 @@ import Calculator from "./pages/Calculator";
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import CommonCode from './pages/CommonCode';
+import YouTubeoutube from './pages/youtube';
+import UserData from './pages/UserData';
+import JokePage from "./JokesGenerator/JokePage"
+import Form from './pages/Form';
+import ArrayTable from './pages/ArrayTable';
 
 const App = () => {
   return (
@@ -19,6 +24,11 @@ const App = () => {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/datatable" element={<DataTable />} />
       <Route path="/commoncode" element={<CommonCode />} />
+      <Route path="/youtube" element={<YouTubeoutube />} />
+      <Route path="/userdata" element={<UserData />} />
+      <Route path="/jokes" element={<JokePage />} />
+      <Route path="/form" element={<Form />} />
+      <Route path="/arraytable" element={<ArrayTable />} />
     </Routes>
     </>
   )

@@ -60,7 +60,7 @@ function Register() {
           }
           
           alert("Signup Successful!");
-          setTimeout(() => navigate("/login"), 1000);
+          setTimeout(() => navigate("/dashboard"), 1000);
         } catch (error) {
           setError("Network Error! Try again.");
           console.error("Network error:", error);
@@ -128,7 +128,7 @@ function Register() {
           </label>
         </div>
 
-        <button type="submit" disabled={!formData.isChecked} style={{marginBottom:"20px"}}>
+        <button type="submit"  style={{marginBottom:"20px"}}>
           Signup
         </button>
       </form>

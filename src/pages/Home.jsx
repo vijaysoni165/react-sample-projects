@@ -68,7 +68,47 @@ function Home() {
               <footer>
                 <h5>Common Code</h5>
               </footer>
-            </Link>                        
+            </Link>  
+            <Link to="/youtube" className="img-tiles">              
+              <span className="img-container">
+                <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
+              </span>
+              <footer>
+                <h5>YouTube</h5>
+              </footer>
+            </Link> 
+            <Link to="/userdata" className="img-tiles">              
+              <span className="img-container">
+                <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
+              </span>
+              <footer>
+                <h5>User Data</h5>
+              </footer>
+            </Link> 
+            <Link to="/jokes" className="img-tiles">              
+              <span className="img-container">
+                <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
+              </span>
+              <footer>
+                <h5>Jokes</h5>
+              </footer>
+            </Link>  
+            <Link to="/form" className="img-tiles">              
+              <span className="img-container">
+                <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
+              </span>
+              <footer>
+                <h5>Form</h5>
+              </footer>
+            </Link>
+            <Link to="/arraytable" className="img-tiles">              
+              <span className="img-container">
+                <img src="https://react-projects.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1-birthday.cc0a5499.png&w=1920&q=75" className="img-fluid" />
+              </span>
+              <footer>
+                <h5>Array Table</h5>
+              </footer>
+            </Link>                           
           </nav>          
         </div>
       </section>   

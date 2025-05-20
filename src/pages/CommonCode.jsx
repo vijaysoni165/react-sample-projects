@@ -74,14 +74,13 @@ function CommonCode() {
 
         
     
-        const [openIndexes, setOpenIndexes] = useState([0]); // First section open by default
-      
+        const [openIndexes, setOpenIndexes] = useState([0]); // First section open by default      
         const toggleAccordion1 = (index) => {
-          if (openIndexes.includes(index)) {
-            setOpenIndexes(openIndexes.filter((i) => i !== index)); // Close section
-          } else {
-            setOpenIndexes([...openIndexes, index]); // Open section
-          }
+          setOpenIndexes((prevIndexes) =>
+            prevIndexes.includes(index)
+              ? prevIndexes.filter((i) => i !== index) // Close section
+              : [...prevIndexes, index] // Open section
+          );      
         };
     
 
@@ -253,7 +252,7 @@ function CommonCode() {
             <div className="accordion">
                 {["Section 1", "Section 2", "Section 3" ].map((title, index) =>(
                     <div key={index} className={`accordion-item ${openIndex === index ? "active" : ""}`}>
-                        <div className="accordion-header" onClick={()=> toggleAccordion1(index)}>
+                        <div className="accordion-header" onClick={()=> toggleAccordion(index)}>
                             {title}
                         </div>
                         <div className="accordion-content">
@@ -265,14 +264,14 @@ function CommonCode() {
 
             <div className="accordion">
                 {["Section 1", "Section 2", "Section 3" ].map((title, index) =>(
-                    <div key={index} className={`accordion-item ${setOpenIndexes === index ? "active" : ""}`}>
-                        <div className="accordion-header" onClick={()=> toggleAccordion1(index)}>
-                            {title}
-                        </div>
-                        <div className="accordion-content">
-                            <p>This is the content for {title}.</p>
-                        </div>
-                    </div>
+                  <div key={index}>
+                    <button onClick={() => toggleAccordion1(index)}>
+                      Section {index}
+                    </button>
+                    {openIndexes.includes(index) && (
+                      <div className="content">Content for Section  {index}</div>
+                    )}
+                  </div>
                 ))}
             </div>
 
