@@ -13,6 +13,8 @@ import UserData from './pages/UserData';
 import JokePage from "./JokesGenerator/JokePage"
 import Form from './pages/Form';
 import ArrayTable from './pages/ArrayTable';
+import WeatherApp from './WeatherApp/WeatherApp';
+import ToDOList from './ToDoList/ToDOList';
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
       <Route path="/jokes" element={<JokePage />} />
       <Route path="/form" element={<Form />} />
       <Route path="/arraytable" element={<ArrayTable />} />
+      <Route path="/weatherapp" element={<WeatherApp />} />
+      <Route path="/todolist" element={<ToDOList />} />
     </Routes>
     </>
   )
