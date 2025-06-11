@@ -15,6 +15,9 @@ import Form from './pages/Form';
 import ArrayTable from './pages/ArrayTable';
 import WeatherApp from './WeatherApp/WeatherApp';
 import ToDOList from './ToDoList/ToDOList';
+import View from './CrudAplication/View';
+import Create from './CrudAplication/Create';
+import Update from './CrudAplication/Update';
 
 const App = () => {
   return (
@@ -33,6 +36,9 @@ const App = () => {
       <Route path="/arraytable" element={<ArrayTable />} />
       <Route path="/weatherapp" element={<WeatherApp />} />
       <Route path="/todolist" element={<ToDOList />} />
+      <Route path="/crudapplication" element={<Create />} />
+      <Route path="/view" element={<View />} />
+      <Route path="/update" element={<Update />} />
     </Routes>
     </>
   )
