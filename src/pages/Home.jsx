@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from "react-router-dom";
 import {Routes, Route, Link  } from "react-router-dom";
 // import RoutesNav from '../RootNavigator1/RoutesNav';
-import './Home.css';
+import './Homes.css';
 
 
 function Home() {
