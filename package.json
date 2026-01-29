@@ -11,13 +11,14 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-  },
+  },  
   "dependencies": {
     "axios": "^1.9.0",
     "bootstrap": "^5.3.3",
     "lucide-react": "^0.477.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
+    "react-data-table-component": "^7.7.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
     "sweetalert2": "^11.17.2"

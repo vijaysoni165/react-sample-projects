@@ -1,4 +1,5 @@
 import './App.css'
+
 // import RoutesNav from './RootNavigator/RoutesNav';
 import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
@@ -18,6 +19,8 @@ import ToDOList from './ToDoList/ToDOList';
 import View from './CrudAplication/View';
 import Create from './CrudAplication/Create';
 import Update from './CrudAplication/Update';
+import Test from "./components/test"
+
 
 const App = () => {
   return (
@@ -39,6 +42,7 @@ const App = () => {
       <Route path="/crudapplication" element={<Create />} />
       <Route path="/view" element={<View />} />
       <Route path="/update" element={<Update />} />
+      <Route path="/test" element={<Test />} />
     </Routes>
     </>
   )
