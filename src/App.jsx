@@ -9,7 +9,7 @@ import Calculator from "./pages/Calculator";
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import CommonCode from './pages/CommonCode';
-import YouTubeoutube from './pages/youtube';
+import YouTubeoutube from './pages/Youtube';
 import UserData from './pages/UserData';
 import JokePage from "./JokesGenerator/JokePage"
 import Form from './pages/Form';
