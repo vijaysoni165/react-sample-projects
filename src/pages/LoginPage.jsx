@@ -13,7 +13,7 @@ function LoginPage() {
    const handleLogin = async (e) => {
     e.preventDefault();
     try{
-      const response = await fetch("https://reqres.in/api/login", {
+      const response = await fetch("https://dummyjson.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,8 +63,8 @@ function LoginPage() {
         <button type="submit">Login</button>
       </form>
       <a onClick={goToRegister} class="btn btn-gray d-block" id="nextBtn">Create your Account</a>
-      <p>Email: eve.holt@reqres.in</p>
-      <p>Password: cityslicka</p>
+      <p>Email: emilys</p>
+      <p>Password: emilyspass</p>
     </div>
     </div>
   )
